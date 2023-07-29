@@ -1,2 +1,15 @@
+/* CSS for holder element */
+.holder {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  justify-content: space-between; /* Evenly place items with space in-between */
+}
 
-/* Your CSS Code here. */
+/* CSS for the items */
+.item {
+  flex: 0 0 calc(33.333% - 10px); /* Calculate 33.333% width for each item (minus spacing) */
+  margin: 5px; /* Add spacing between items */
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
